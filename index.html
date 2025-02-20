@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
             color: white;
             text-align: center;
             scroll-behavior: smooth;
@@ -26,8 +26,10 @@
         }
         .profile-pic {
             width: 150px;
+            height: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
+            object-fit: cover;
         }
         .social-links a {
             margin: 0 10px;
@@ -42,16 +44,6 @@
         section {
             padding: 50px 0;
         }
-        .work-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px 0;
-            transition: transform 0.3s;
-        }
-        .work-card:hover {
-            transform: scale(1.05);
-        }
         .project-card {
             display: inline-block;
             width: 45%;
@@ -59,7 +51,7 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease-in-out;
         }
         .project-card:hover {
             transform: scale(1.05);
@@ -82,6 +74,8 @@
                 <a href="https://www.linkedin.com/in/mandovirajan" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/MandoviRajan" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+            <br>
+            <a href="resume.html" style="color: yellow; font-size: 18px; text-decoration: underline;">Resume</a>
         </div>
     </header>
     
@@ -89,20 +83,6 @@
         <div class="container">
             <h2>About Me</h2>
             <p>MSBA candidate at UC Davis with 6 years of experience in business intelligence, analytics, and digital transformation. Passionate about using data to drive impactful business decisions.</p>
-        </div>
-    </section>
-    
-    <section id="work">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <div class="work-card">
-                <h3>Deloitte Consulting US-India</h3>
-                <p>Led a 6-member team to transform raw transactional data within SAP ACM into actionable business intelligence reports, automating financial risk analysis.</p>
-            </div>
-            <div class="work-card">
-                <h3>BroadVision Marketing (Practicum Project)</h3>
-                <p>Developed an automation tool for SEO analysis, reducing manual analysis time by 80% and streamlining keyword-based web optimization.</p>
-            </div>
         </div>
     </section>
     
