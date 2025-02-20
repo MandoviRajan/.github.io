@@ -14,6 +14,7 @@
             background: linear-gradient(to right, #1e3c72, #2a5298);
             color: white;
             text-align: center;
+            scroll-behavior: smooth;
         }
         .container {
             width: 80%;
@@ -41,12 +42,27 @@
         section {
             padding: 50px 0;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
+        .work-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
             margin: 10px 0;
+            transition: transform 0.3s;
+        }
+        .work-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
         }
         footer {
             background: #172e54;
@@ -60,9 +76,9 @@
         <div class="container">
             <img src="profile.jpg" alt="Mandovi Rajan" class="profile-pic">
             <h1>Mandovi Rajan</h1>
-            <p>Business Analyst | Product Management Enthusiast</p>
+            <p>MSBA | UC Davis | Business Analyst | Product Management Enthusiast</p>
             <div class="social-links">
-                <a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:mtrajan@ucdavis.edu" target="_blank"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/mandovirajan" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/MandoviRajan" target="_blank"><i class="fab fa-github"></i></a>
             </div>
@@ -72,27 +88,37 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a Business Analyst with experience in digital transformation, market research, and analytics. Passionate about using data-driven insights to improve product growth and innovation.</p>
+            <p>MSBA candidate at UC Davis with 6 years of experience in business intelligence, analytics, and digital transformation. Passionate about using data to drive impactful business decisions.</p>
         </div>
     </section>
     
     <section id="work">
         <div class="container">
             <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Deloitte Consulting US-India</strong> - SAP ERP Implementation (6 years)</li>
-                <li><strong>UC Davis MSBA Practicum</strong> - SEO Performance Research & Automation</li>
-            </ul>
+            <div class="work-card">
+                <h3>Deloitte Consulting US-India</h3>
+                <p>Led a 6-member team to transform raw transactional data within SAP ACM into actionable business intelligence reports, automating financial risk analysis.</p>
+            </div>
+            <div class="work-card">
+                <h3>BroadVision Marketing (Practicum Project)</h3>
+                <p>Developed an automation tool for SEO analysis, reducing manual analysis time by 80% and streamlining keyword-based web optimization.</p>
+            </div>
         </div>
     </section>
     
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/MandoviRajan/Excel-Automation-Tool" target="_blank">Excel Automation Tool</a></li>
-                <li><a href="https://github.com/MandoviRajan/SEO-Performance-Research" target="_blank">SEO Performance Research</a></li>
-            </ul>
+            <div class="project-card">
+                <h3>Excel Automation Tool</h3>
+                <p>Engineered an Excel-based automation tool for SEO analysis using VBA and Pivot Tables.</p>
+                <a href="https://github.com/MandoviRajan/Excel-Automation-Tool" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>SEO Performance Research</h3>
+                <p>Analyzed SEO metrics using regression modeling in R to determine search ranking impact.</p>
+                <a href="https://github.com/MandoviRajan/SEO-Performance-Research" target="_blank">View Project</a>
+            </div>
         </div>
     </section>
     
@@ -101,7 +127,7 @@
             <h2>Contact</h2>
             <p>Feel free to reach out for collaboration!</p>
             <div class="social-links">
-                <a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:mtrajan@ucdavis.edu" target="_blank"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/mandovirajan" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/MandoviRajan" target="_blank"><i class="fab fa-github"></i></a>
             </div>
