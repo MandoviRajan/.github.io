@@ -44,10 +44,21 @@
         }
         .work-experience, .education, .skills {
             padding: 20px;
-            border-bottom: 1px solid #ddd;
         }
-        .work-experience:last-child, .education:last-child, .skills:last-child {
-            border-bottom: none;
+        .work-card {
+            background: #e3eaf0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .work-card h3 {
+            display: flex;
+            align-items: center;
+        }
+        .work-card h3 i {
+            margin-right: 10px;
+            color: #2c3e50;
         }
         .back-button {
             display: block;
@@ -77,52 +88,59 @@
         <div class="section work-experience">
             <h2>Professional Experience</h2>
             
-            <h3>BroadVision Marketing (Practicum Project) - San Francisco, CA</h3>
-            <p><strong>Data Analyst</strong> | Aug. 2024 – Aug. 2025</p>
-            <p><em>As part of the MSBA, automated search engine optimization analysis for a digital marketing agency, enabling them to develop effective marketing strategies for their clients and improve their Google rankings.</em></p>
-            <ul>
-                <li>Reduced manual SEO analysis time by 80% by engineering and delivering an Excel-based automation tool leveraging VBA, Pivot tables, and advanced Excel functionalities.</li>
-                <li>Developed a scoring algorithm that evaluated 5000+ URL-Keyword combinations using 4 key metrics to streamline the identification of webpages most suitable for optimization.</li>
-                <li>Conducted regression analysis in R to quantify the impact of 10 SEO metrics on organic search rankings.</li>
-            </ul>
+            <div class="work-card">
+                <h3><i class="fas fa-briefcase"></i> BroadVision Marketing (Practicum Project) - San Francisco, CA</h3>
+                <p><strong>Data Analyst</strong> | Aug. 2024 – Aug. 2025</p>
+                <p><em>As part of the MSBA, automated search engine optimization analysis for a digital marketing agency.</em></p>
+                <ul>
+                    <li>📊 Reduced manual SEO analysis time by 80% with an Excel automation tool.</li>
+                    <li>🔍 Developed a scoring algorithm analyzing 5000+ URL-Keyword combinations.</li>
+                    <li>📈 Conducted regression analysis in R to assess SEO metric impact.</li>
+                </ul>
+            </div>
             
-            <h3>Deloitte Consulting USI (US-India) Pvt. Ltd. - New Delhi, India</h3>
-            <p><em>Designed reporting frameworks to enhance financial and operational analytics for Fortune 500 clients from agribusiness and CPG industries.</em></p>
-            
-            <h4>Functional Consultant | Oct. 2020 – Jun. 2024</h4>
-            <ul>
-                <li>Led a 6-member team to transform raw transactional data within client’s SAP ACM system into dynamic Business Intelligence reports, providing real-time insights into the financial impact of market price fluctuations on pre-negotiated grain contracts, thus enabling clients to adopt data-driven risk mitigation strategies.</li>
-                <li>Delivered a structured portfolio of 40 reports on SAP Webi and Tableau, automating critical P&L and stock calculations, eliminating 20+ hours of manual effort spent on spreadsheet-based adjustments every month.</li>
-                <li>Spearheaded project management for 2 client projects using ALM Octane to track progress, owning functional design and testing while leading cross-functional teams, ensuring 95% of tasks met project deadlines.</li>
-                <li>Received Applause Award for expanding the usability of BI reports from North America to Europe by optimizing report design and implementing regional configurations in the system.</li>
-            </ul>
-            
-            <h4>Business Intelligence Developer | Aug. 2018 – Sept. 2020</h4>
-            <ul>
-                <li>Developed comprehensive BI reports on Profit & Loss following best practices in structured financial reporting, enabling 60+ business users to analyze their revenue trends and cost patterns across 14 geographies.</li>
-                <li>Integrated data from 80+ database tables and built 25 interconnected data models on SAP HANA Studio to facilitate Cost & Profitability analysis.</li>
-                <li>Implemented performance tuning techniques such as data partitioning, workload balancing, and join optimization to process ~2TB of data, thereby reducing report runtime by 70%.</li>
-            </ul>
+            <div class="work-card">
+                <h3><i class="fas fa-building"></i> Deloitte Consulting USI (US-India) Pvt. Ltd. - New Delhi, India</h3>
+                <p><em>Enhancing financial and operational analytics for Fortune 500 clients.</em></p>
+                
+                <h4>Functional Consultant | Oct. 2020 – Jun. 2024</h4>
+                <ul>
+                    <li>📈 Led a 6-member team to generate financial reports for market price risk mitigation.</li>
+                    <li>📊 Delivered 40+ SAP Webi/Tableau reports reducing manual effort by 20+ hours monthly.</li>
+                    <li>✅ Managed ALM Octane projects ensuring 95% on-time task completion.</li>
+                </ul>
+                
+                <h4>Business Intelligence Developer | Aug. 2018 – Sept. 2020</h4>
+                <ul>
+                    <li>📊 Created financial reports aiding 60+ users across 14 geographies.</li>
+                    <li>🔗 Integrated data from 80+ sources to enhance business analytics.</li>
+                    <li>⚡ Improved processing speed of large datasets by 70% using performance tuning.</li>
+                </ul>
+            </div>
         </div>
         
         <div class="section education">
-            <h2>Education</h2>
-            <p><strong>University of California, Davis</strong></p>
-            <p>Master of Science in Business Analytics (MSBA)</p>
+            <h2>🎓 Education</h2>
+            <div class="work-card">
+                <p><strong>University of California, Davis</strong></p>
+                <p>Master of Science in Business Analytics (MSBA)</p>
+            </div>
         </div>
         
         <div class="section skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Business Intelligence & Data Analytics</li>
-                <li>Product Management & Market Research</li>
-                <li>SQL, Excel, Tableau, Power BI</li>
-                <li>SEO Optimization & Digital Marketing</li>
-            </ul>
+            <h2>💡 Skills</h2>
+            <div class="work-card">
+                <ul>
+                    <li>📊 Business Intelligence & Data Analytics</li>
+                    <li>🚀 Product Management & Market Research</li>
+                    <li>🛠 SQL, Excel, Tableau, Power BI</li>
+                    <li>🌍 SEO Optimization & Digital Marketing</li>
+                </ul>
+            </div>
         </div>
         
         <div class="back-button">
-            <a href="index.html">Back to Portfolio</a>
+            <a href="index.html">⬅ Back to Portfolio</a>
         </div>
     </div>
 </body>
